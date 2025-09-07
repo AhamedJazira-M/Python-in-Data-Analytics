@@ -43,4 +43,16 @@ for index,row in dataset1.iterrows():
 
 print(dataset1.loc[dataset1["Name"]=="Pikachu"])
 print(dataset1.loc[dataset1["Speed"]>90])
+
+dataset1["Power"]=dataset1["HP"]+dataset1["Attack"]
+print(dataset1.head())
+
+dataset1.sort_values(["Speed"],ascending=True)
+
+dataset1=dataset1.drop(columns=["Power"])
+print(dataset1.head())
      
+dataset1.to_excel("newdataset.xlsx")
+
+dataset1.isnull().any()
+
