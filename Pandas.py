@@ -22,3 +22,9 @@ print(dataset1.head())
 
 dataset1=pd.read_csv("dataset.txt")
 print(dataset1.head())
+
+dataset1=pd.read_excel("datasetexcel.xlsx")
+print(dataset1.head())
+
+print(dataset1.shape)
+print(dataset1.describe())
