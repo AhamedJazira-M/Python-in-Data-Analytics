@@ -17,3 +17,8 @@ data={"Name":["Apple","Guava","Grapes"],"Color":["Red","Green","Violet"]}
 dataset=pd.DataFrame(data)
 print(dataset)
 
+dataset1=pd.read_csv("dataset.csv")
+print(dataset1.head())
+
+dataset1=pd.read_csv("dataset.txt")
+print(dataset1.head())
