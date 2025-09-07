@@ -56,3 +56,15 @@ dataset1.to_excel("newdataset.xlsx")
 
 dataset1.isnull().any()
 
+dataset1=dataset1[dataset1["Type 2"].notna()]
+print(dataset1.isnull().any())
+dataset1
+
+meandata=dataset1["Speed"].fillna(dataset1["Speed"].mean())
+print(meandata)
+
+print(dataset1.head())
+Generation=set(dataset1["Generation"])
+dataset1["Generation"]=dataset1["Generation"].map({1:"One",2:"Two",3:"Three",4:"Four",5:"Five",6:"Six"}).astype(str)
+print(dataset1.head())
+     
