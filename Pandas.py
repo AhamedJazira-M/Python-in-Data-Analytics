@@ -28,3 +28,19 @@ print(dataset1.head())
 
 print(dataset1.shape)
 print(dataset1.describe())
+
+print(dataset1.columns)
+print(dataset1[["Name","Speed"]])
+print(dataset1["Name"][0:6])
+
+
+print(dataset1.iloc[0])
+print(dataset1.iloc[0:5])
+print(dataset1.iloc[0,1])  #like matrix [0,1]
+
+for index,row in dataset1.iterrows():
+  print(index,row["Name"])
+
+print(dataset1.loc[dataset1["Name"]=="Pikachu"])
+print(dataset1.loc[dataset1["Speed"]>90])
+     
