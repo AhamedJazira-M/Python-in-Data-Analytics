@@ -1,5 +1,6 @@
 #Start with installation if not already installed.
-pip install pandas # use ! before pip to install in google colab
+# use ! before pip to install in google colab or jupyter Notebook
+#pip install pandas 
 import pandas
 pandas.__version__
 
