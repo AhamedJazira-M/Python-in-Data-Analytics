@@ -1,6 +1,5 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AhamedJazira-M/Python-in-Data-Analytics/blob/main/Pandas.ipynb)
-
-!pip install pandas
+#Start with installation if not already installed.
+pip install pandas # use ! before pip to install in google colab
 import pandas
 pandas.__version__
 
