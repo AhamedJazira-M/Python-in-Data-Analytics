@@ -16,3 +16,26 @@ plt.show()
 
 #MARKER
 
+x=np.array([0,6,20,40])
+y=np.array([0,100,200,450])
+plt.plot(x,y,"s") #s for square marker
+plt.show()
+
+#d - diamond marker
+#o - circle marker
+#^ - triangle marker
+#* - star marker
+#h - hexagon marker
+#x - x marker
+#p - pentagon marker
+
+#DOTTED PLOT WITH LINE
+
+plt.plot(x,y,"s:r") #s for square marker, : for dotted line, r for red color
+plt.show()
+
+#- for solid line
+#-- for dashed line
+#-. for dash-dot line
+#: for dotted line
+
