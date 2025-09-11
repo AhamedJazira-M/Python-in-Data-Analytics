@@ -39,3 +39,8 @@ plt.show()
 #-. for dash-dot line
 #: for dotted line
 
+#MARKER SIZE
+plt.plot(x,y,"s:r",ms=10) #ms for marker size
+plt.show()
+
+#
