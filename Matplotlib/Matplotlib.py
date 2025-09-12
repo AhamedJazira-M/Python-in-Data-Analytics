@@ -138,4 +138,50 @@ plt.show()
 plt.pie(x, labels=mylabel, autopct="%1.1f%%") #autopct to show percentage
 plt.show()
 
-#
+#start angle
+
+plt.pie(x, labels=mylabel, startangle=90) #startangle to rotate the pie chart
+plt.show()  
+
+#colormap
+
+plt.pie(x, labels=mylabel, colors=["b","r","g","y","c"]) #colors to change the color of the slices
+plt.show() 
+
+#Subplot
+
+x=[1,2,3,4,5]
+y=[10,20,15,25,30]
+x2=[1,2,3,4,5]
+y2=[30,25,15,20,10]
+plt.subplot(1,2,1) #1 row, 2 columns, 1st plot(position)
+plt.plot(x,y,"r")
+plt.suptitle("My first subplot", fontsize=20, color="b") #Super title for overall title
+
+#contour plot
+
+x=np.linspace(-5,5,100) #linear space from -5 to 5 with 100 points
+y=np.linspace(-5,5,100) #linear space from -5 to 5 with 100 points
+X,Y=np.meshgrid(x,y) #create a meshgrid
+Z=np.sqrt(X**2+Y**2) #calculate the Z values
+plt.contour(X,Y,Z, cmap="viridis") #cmap for color map
+plt.colorbar() #to show the color bar
+plt.title("Contour plot", fontsize=20, color="b")
+plt.show()
+
+#Filled contour plot
+
+plt.contourf(X,Y,Z, cmap="plasma") #contourf for filled contour plot
+plt.colorbar() #to show the color bar
+plt.title("Filled Contour plot", fontsize=20, color="b")
+plt.show()
+
+#3D plot
+
+from mpl_toolkits.mplot3d import Axes3D
+
+fig=plt.figure()
+ax=fig.add_subplot(111, projection="3d") #111 means 1 row, 1 column, 1st plot
+ax.plot(X,Y,Z, color="r")   
+plt.title("3D plot", fontsize=20, color="b")
+plt.show()
