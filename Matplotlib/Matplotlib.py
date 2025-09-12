@@ -45,7 +45,7 @@ plt.show()
 
 #change the around and inside color of the marker (plot)
 
-plt.plot(x,y,"s-.b" , s=20,mec="b",mfc="y") #mec for marker edge color, mfc for marker face color
+plt.plot(x,y,"s-.b", s=20,mec="b",mfc="y") #mec for marker edge color, mfc for marker face color
 plt.show()
 
 #change the style of the plot line
@@ -78,5 +78,25 @@ plt.plot(x2,y2,"go") #to show only the marker of the second line
 
 #Legend
 
-plt.plot(x,,"r",label="Profit")
+plt.plot(x,y,"r",label="Profit")
+
+#Bar Graph
+
+x=["A","B","C","D","E"]
+y=[10,20,15,25,30]
+plt.bar(x,y, color="g", width=0.5) #width for the width of the bar
+plt.show()
+
+#Horizontal Bar Graph
+
+plt.barh(x,y, color="b", height=0.5) #height for the height of the bar
+plt.show()
+
+#Double Bar Graph
+
+x=["A","B","C","D","E"]
+y1=[10,20,15,25,30]
+y2=[5,15,10,20,25]
+plt.bar(x,y1,color="g", width=0.3, label="Profit")
+plt.bar(x,y2,color="b", width=0.3, label="Tax", bottom=y1) #bottom to stack the bars
 
