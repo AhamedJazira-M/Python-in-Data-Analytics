@@ -64,3 +64,19 @@ plt.ylabel("Y axis", fontsize=15, color="b")
 plt.grid()
 plt.grid(axis="x") #to show grid only for x axis
 plt.grid(axis="y") #to show grid only for y axis
+
+#Double plot
+
+x=np.array([0,6,20,40])
+y=np.array([0,100,200,450])
+x2=np.array([0,5,10,15])
+y2=np.array([0,50,100,150])
+plt.plot(x,y,"s--g",s=20,color="y",ls="-", linewidth="3", label="First line") #label for legend
+plt.plot(x2,y2,"o:r",ms=10, label="Second line")
+plt.plot(x,y,"ro") #to show only the marker of the first line
+plt.plot(x2,y2,"go") #to show only the marker of the second line
+
+#Legend
+
+plt.plot(x,,"r",label="Profit")
+
