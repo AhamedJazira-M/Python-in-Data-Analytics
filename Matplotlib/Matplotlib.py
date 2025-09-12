@@ -43,4 +43,24 @@ plt.show()
 plt.plot(x,y,"s:r",ms=10) #ms for marker size
 plt.show()
 
-#
+#change the around and inside color of the marker (plot)
+
+plt.plot(x,y,"s-.b" , s=20,mec="b",mfc="y") #mec for marker edge color, mfc for marker face color
+plt.show()
+
+#change the style of the plot line
+
+plt.plot(x,y,"s--g",s=20,color="y",ls="-", linewidth="10") #ls for line style
+plt.show()
+
+#Title
+
+plt.title("My first plot", fontsize=20, color="r", loc="left") #loc for location of the title
+plt.xlabel("X axis", fontsize=15, color="b")
+plt.ylabel("Y axis", fontsize=15, color="b")
+
+#Grid format
+
+plt.grid()
+plt.grid(axis="x") #to show grid only for x axis
+plt.grid(axis="y") #to show grid only for y axis
