@@ -58,12 +58,14 @@ plt.show()
 plt.title("My first plot", fontsize=20, color="r", loc="left") #loc for location of the title
 plt.xlabel("X axis", fontsize=15, color="b")
 plt.ylabel("Y axis", fontsize=15, color="b")
+plt.show()
 
 #Grid format
 
 plt.grid()
 plt.grid(axis="x") #to show grid only for x axis
 plt.grid(axis="y") #to show grid only for y axis
+plt.show()
 
 #Double plot
 
@@ -75,10 +77,12 @@ plt.plot(x,y,"s--g",s=20,color="y",ls="-", linewidth="3", label="First line") #l
 plt.plot(x2,y2,"o:r",ms=10, label="Second line")
 plt.plot(x,y,"ro") #to show only the marker of the first line
 plt.plot(x2,y2,"go") #to show only the marker of the second line
+plt.show()
 
 #Legend
 
 plt.plot(x,y,"r",label="Profit")
+plt.show()
 
 #Bar Graph
 
@@ -99,4 +103,39 @@ y1=[10,20,15,25,30]
 y2=[5,15,10,20,25]
 plt.bar(x,y1,color="g", width=0.3, label="Profit")
 plt.bar(x,y2,color="b", width=0.3, label="Tax", bottom=y1) #bottom to stack the bars
+plt.show()
 
+#Histogram
+
+data=np.random.randn(1000) #generate 1000 random numbers
+plt.hist(data, bins=30, color="b", edgecolor="black") #bins for number of bars
+plt.show()
+
+#Scatter plot
+
+plt.scatter(x,y, color="r", marker="o") #marker for marker style
+plt.show()
+
+#Pie chart
+
+x=[10,20,35,60,90]
+plt.pie(x)
+mylabel=["Blueberry","Orange","Apple","Grapes","Cherry"]
+plt.pie(x, labels=mylabel)
+plt.show()
+
+#Explode pie chart
+
+plt.pie(x, labels=mylabel, explode=(0,0.1,0,0,0)) #explode to separate a slice
+plt.show()
+
+#Shadow pie chart
+plt.pie(x, labels=mylabel, explode=(0,0.1,0,0,0), shadow=True) #shadow to add shadow
+plt.show()
+
+#Percentage
+
+plt.pie(x, labels=mylabel, autopct="%1.1f%%") #autopct to show percentage
+plt.show()
+
+#
