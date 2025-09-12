@@ -29,4 +29,10 @@ a.nbytes #total size of the array in bytes
 b.dtype.name #data type name
 b.T #transpose of the array
 
+b.flatten() #convert to 1D array
+b.reshape(4,2) #reshape the array
+b.reshape(2,2,2) #reshape to 3D array
+b.reshape(2,-1) #-1 means any number of columns
+b.reshape(-1,2) #-1 means any number of rows
 
+b.size*b.itemsize #total size of the array in bytes
