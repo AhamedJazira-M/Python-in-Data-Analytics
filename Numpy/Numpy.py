@@ -59,3 +59,16 @@ b.sum(axis=1) #Sum of 1st Dim elements , Sum of 2nd Dim elements
 
 #For each elements in array
 
+np.sqrt(a)
+np.std(a)
+np.exp(a)
+np.log(a)
+np.log10(a)
+
+#Stack
+
+b=np.array([(7,9,6,2),(10,8,9,6)])
+f=np.array([(1,2,3,4),(5,6,7,8)])
+np.vstack((b,f)) #Vertical stack
+np.hstack((b,f)) #Horizontal stack
+b.ravel() #Merging as single
