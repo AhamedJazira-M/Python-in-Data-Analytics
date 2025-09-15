@@ -1,8 +1,7 @@
 # Python-in-Data-Analytics
 Matplotlib, Numpy, Pandas, Seaborn
 
-Matplotlib and Pandas ✅
+Matplotlib, Pandas, Numpy ✅
 
-Working on Numpy
 
-I will work on it.
+I will work on Seaborn.
