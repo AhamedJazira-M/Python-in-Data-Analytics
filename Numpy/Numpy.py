@@ -36,3 +36,26 @@ b.reshape(2,-1) #-1 means any number of columns
 b.reshape(-1,2) #-1 means any number of rows
 
 b.size*b.itemsize #total size of the array in bytes
+
+#Array Slicing
+
+b[0,2] #Row, Column
+b[0:,2] #0th Row to all rows, Column 2
+
+#Array Value Operation 
+
+b.min()
+b.max()
+b.sum()
+
+#Arithmetic Operations
+
+#a+c , a+b , a-c , a*c , a/c
+
+#Two Dimensions 
+
+b.sum(axis=0) #1st Dim index elements + 2nd Dim same index elements 
+b.sum(axis=1) #Sum of 1st Dim elements , Sum of 2nd Dim elements
+
+#For each elements in array
+
