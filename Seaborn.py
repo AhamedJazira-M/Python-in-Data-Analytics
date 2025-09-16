@@ -2,3 +2,5 @@
 #Add ! before pip to install in google colab or jupyter notebook
 
 #pip install seaborn
+
+import seaborn as sns
